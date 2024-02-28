@@ -1,0 +1,13 @@
+create table member(
+ mid_no number(3)
+,mid varchar2(30)      not null unique
+,pwd varchar2(30)       not null
+,primary key(mid_no)
+);
+
+insert into member values(1,'abc','123');
+insert into member values(2,'xyz','123') ;
+
+commit
+
+select*from member

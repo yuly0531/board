@@ -1,0 +1,86 @@
+	/*********************************/
+	/* body 태그 안의 모든 글자크기를 13px로 설정하기*/
+	/*********************************/
+	body *{
+		font-size:14px;
+		
+	}
+	/*
+	table 태그이 경계선을 단일선으로 하기
+	th태그안의 배경색을 알아서 하기
+	th,td태그안의 여백을 7px 13px 7px 13px로 하기
+	*/
+	table {bordor-color: pink;
+	border:1px;
+			border-collapse:collapse;
+			spacing:0;
+	}
+	th, td{bordor-color: pink;
+	border:0px;
+			padding:7px 13px 7px 13px;
+			
+	}
+	th{bordor-color: pink;
+			background-color:#ceceff;
+			
+	}
+	
+	table, th, td{
+				bordor-color: pink;
+				border-style:solid;
+	}
+	/*
+	class=tableA11 가진 table 태그와 그 안의 th, td의
+	경계선 두께 설정하기
+	*/
+	
+	.tableA11, .tableA11 th, .tableA11 td{
+		border-width:1px;
+		spacing:0;
+	
+	}
+	
+	/*
+	class=tableA10 가진 table 태그와 그 안의 th, td의
+	경계선 두께 모양 색상 설정하기
+	*/
+	.tableA10, .tableA10 th, .tableA10 td{
+			border-top-width:1px;
+			border-bottom-width:1px;
+			border-left-width:0px;
+			border-right-width:0px;
+			spacing:0;
+	
+	}
+	
+	/*
+	class=tableA00 가진 table 태그와 그 안의 th, td의
+	경계선 두께 모양 색상 설정하기
+	*/
+	.tableA00, .tableA00 th, .tableA00 td{
+			border:0px ;
+			spacing:0;
+	
+	}
+	/*
+	class=tableA00 class=tableA10  class=tableA11 가진 태그안의
+	tr태그중에  2n+3 번째 tr의 배경색을 로 하기
+	이때 n은 0부터 시작해서 1씩 증가한다.
+	*/
+	.tableA00 tr:nth-child(2n+3)
+	,.tableA10 tr:nth-child(2n+3)
+	,.tableA11 tr:nth-child(2n+3){
+		background-color:#f6f6f6;
+	}
+	
+	
+	
+	.tableB .tableB th, .tableB td{
+			bordor-color: pink;
+			spacing:0;
+	
+	}
+	
+	
+	
+	
